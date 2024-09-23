@@ -1,5 +1,7 @@
 # End to End House price prediction
 
+Check: 
+
 There are 14 features and 506 rows. 
 
 Features are the following:

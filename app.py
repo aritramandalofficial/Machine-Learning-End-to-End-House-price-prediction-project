@@ -32,12 +32,12 @@ st.write("🏠 Enter the area-specific details below, and the model will estimat
 st.header("Input Features")
 feature_1 = st.number_input("crime: value between 0 and 100")
 feature_2 = st.number_input("airport: value 0 or 1")
-feature_3= st.number_input("air_pollution: value between 0 and 1")
+feature_3= st.number_input("air_pollution: value between 0.4 and 1")
 feature_4 = st.number_input("avg_rooms: value between 0 and 100")
-feature_5 = st.number_input("highway_access: value between 0 and 25")
-feature_6 = st.number_input("tax: value between 0 and 1000")
-feature_7 = st.number_input("education: value between 0 and 50")
-feature_8 = st.number_input("lstat: value between 0 and 50")
+feature_5 = st.number_input("highway_access: value between 1 and 25")
+feature_6 = st.number_input("tax: value between 150 and 1000")
+feature_7 = st.number_input("education: value between 15 and 50")
+feature_8 = st.number_input("lstat: value between 1.5 and 50")
 # Add more input fields as needed...
 
 # When the user clicks the "Predict" button

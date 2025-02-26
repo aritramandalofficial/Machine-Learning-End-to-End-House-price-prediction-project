@@ -4,12 +4,32 @@ Purpose of these project is to understand how a data science project lifecycle w
 
 ## Dataset details: 
 
-There are 14 features and 506 rows. 
+There are 11 features and 506 rows. 
 
 Features are the following:
-crim	zn	indus	chas	nox	rm	age	dis	rad	tax	ptratio	b	lstat	medv
+**CRIM:**	Per capita crime rate by town.
 
-Medv corresponds to the price
+**Industry:**	Proportion of non-retail business acres per town.
+
+**Airport:**	Airport near by (1 = near airport, 0 = otherwise).
+
+**Air_pollution:** Air pollution level
+
+**Avg_rooms:**	Average number of rooms per house.
+
+**AGE:**	Average age in the area.
+
+**DIS:**	Weighted distance to nearest shopping centres.
+
+**hw_acc:**	Index of accessibility to highways (higher = better connectivity).
+
+**TAX:**	Property tax rate.
+
+**Education:**	Student-teacher ratio in the area (education quality indicator).
+
+**LSTAT:**	Percentage of lower-status population (poverty indicator).
+
+**med_price:**	Median value of owner-occupied homes in lakh (target variable).
 
 ## Project step:
 1. We first understand the dataset.

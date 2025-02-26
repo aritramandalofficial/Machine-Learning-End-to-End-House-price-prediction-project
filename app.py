@@ -22,6 +22,10 @@ scaler_X, scaler_Y = load_scalers()
 
 # Set the title of the app
 st.title("House Price Prediction")
+# Project description
+st.markdown("### 🏡 Data Science Project by **Aritra Mandal**")
+st.write("📊 Empowering buyers and sellers with data-driven insights for smarter real estate decisions.")
+st.write("Put below the values related to an area and the model will provide estimated value in the area.")
 
 # Create input fields for user data
 st.header("Input Features")

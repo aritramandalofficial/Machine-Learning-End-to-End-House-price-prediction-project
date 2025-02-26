@@ -33,8 +33,13 @@ Features are the following:
 
 ## Project step:
 1. We first understand the dataset.
-2. We find relation between columns using correlation matrix.
-3. We develop a model which can predict the house price.
-4. We deploy the model using pkl files.
+2. Handle missing vlaues, wrong data inut and outliers.
+3. Check normality of the features.
+4. We find relation between columns using correlation matrix and scatter plots.
+5. Discard feature based on peason correlation.
+6. Train test split
+7. Scale the data for faster convergence
+8. Develop a model which can predict the house price.
+9. Deploy the model using pkl files.
 
 

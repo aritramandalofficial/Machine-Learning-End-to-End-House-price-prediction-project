@@ -38,9 +38,11 @@ feature_8 = st.number_input("lstat")
 # When the user clicks the "Predict" button
 if st.button("Predict"):
     # Gather input data
-    data = [1,feature_1, feature_2, feature_3, feature_4, feature_5, feature_6, feature_7, feature_8]
+    data = [feature_1, feature_2, feature_3, feature_4, feature_5, feature_6, feature_7, feature_8]
     # Convert to a NumPy array and scale
     new_data = scaler_X.transform(np.array(data).reshape(1, -1))
+    # Add intercept (1) at the beginning
+    new_data = np.insert(new_data, 0, 1, axis=1)
     
     # Make the prediction
     output = regmodel.predict(new_data)[0]

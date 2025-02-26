@@ -62,4 +62,5 @@ if st.button("Predict"):
 
     
     # Display the result
-    st.success(f"The House Price Prediction is: {output_final} Lakh rupees.")
+    st.success(f"🏡 Estimated House Price: **{output_final:,.2f} Lakh rupees**")
+

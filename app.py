@@ -48,7 +48,8 @@ if st.button("Predict"):
     # Step 2: Subtract 2 (Undo Shift)
     output_standard = output_shifted - 2
 
-    output_final = scaler_Y.inverse_transform(output_standard)
+    output_final = scaler_Y.inverse_transform(np.array(output_standard).reshape(-1, 1))[0][0]
+
     
     # Display the result
     st.success(f"The House Price Prediction is: {output_final} Lakh rupees.")

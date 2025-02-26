@@ -22,17 +22,16 @@ feature_1 = st.number_input("crim")
 feature_2 = st.number_input("airport")
 feature_3= st.number_input("air_pollution")
 feature_4 = st.number_input("avg_rooms")
-feature_5 = st.number_input("dis")
-feature_6 = st.number_input("hw_acc")
-feature_7 = st.number_input("tax")
-feature_8 = st.number_input("education")
-feature_9 = st.number_input("lstat")
+feature_5 = st.number_input("hw_acc")
+feature_6 = st.number_input("tax")
+feature_7 = st.number_input("education")
+feature_8 = st.number_input("lstat")
 # Add more input fields as needed...
 
 # When the user clicks the "Predict" button
 if st.button("Predict"):
     # Gather input data
-    data = [feature_1, feature_2, feature_3, feature_4, feature_5, feature_6, feature_7, feature_8, feature_9]
+    data = [feature_1, feature_2, feature_3, feature_4, feature_5, feature_6, feature_7, feature_8]
     # Convert to a NumPy array and scale
     new_data = scaler_X.transform(np.array(data).reshape(1, -1))
     

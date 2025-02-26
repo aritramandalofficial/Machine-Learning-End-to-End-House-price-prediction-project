@@ -17,6 +17,9 @@ def load_scalers():
     scaler = pickle.load(open('scaling.pkl', 'rb'))
     return scaler['scaler_X'], scaler['scaler_Y']
 
+# Load scalers correctly
+scaler_X, scaler_Y = load_scalers()
+
 # Set the title of the app
 st.title("House Price Prediction")
 

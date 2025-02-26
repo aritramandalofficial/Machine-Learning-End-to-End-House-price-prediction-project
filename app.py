@@ -34,7 +34,7 @@ if st.button("Predict"):
     # Gather input data
     data = [feature_1, feature_2, feature_3, feature_4, feature_5, feature_6, feature_7, feature_8, feature_9]
     # Convert to a NumPy array and scale
-    new_data = scaler.transform(np.array(data).reshape(1, -1))
+    new_data = scaler_X.transform(np.array(data).reshape(1, -1))
     
     # Make the prediction
     output = regmodel.predict(new_data)[0]

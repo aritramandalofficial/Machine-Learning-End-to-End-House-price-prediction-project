@@ -38,7 +38,7 @@ feature_8 = st.number_input("lstat")
 # When the user clicks the "Predict" button
 if st.button("Predict"):
     # Gather input data
-    data = [feature_1, feature_2, feature_3, feature_4, feature_5, feature_6, feature_7, feature_8]
+    data = [1,feature_1, feature_2, feature_3, feature_4, feature_5, feature_6, feature_7, feature_8]
     # Convert to a NumPy array and scale
     new_data = scaler_X.transform(np.array(data).reshape(1, -1))
     

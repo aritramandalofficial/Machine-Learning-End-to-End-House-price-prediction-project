@@ -11,7 +11,11 @@ from sklearn import metrics # for evaluating our model
 
 # Load the model and scaler
 regmodel =  pickle.load(open('regmodel.pkl', 'rb'))
-scaler = pickle.load(open('scaling.pkl', 'rb'))
+# Load the scaler dictionary
+@st.cache_data
+def load_scalers():
+    scaler = pickle.load(open('scaling.pkl', 'rb'))
+    return scaler['scaler_X'], scaler['scaler_Y']
 
 # Set the title of the app
 st.title("House Price Prediction")
@@ -37,6 +41,12 @@ if st.button("Predict"):
     
     # Make the prediction
     output = regmodel.predict(new_data)[0]
+
+    # Step 1: Reverse Natural Log (exp to undo log)
+    output_shifted = np.exp(output)  # This reverses np.log()
+
+    # Step 2: Subtract 2 (Undo Shift)
+    output_standard = output_shifted - 2
     
     # Display the result
-    st.success(f"The Linear regression House Price Prediction is: {output}")
+    st.success(f"The House Price Prediction is: {output_standard} Lakh rupees.")

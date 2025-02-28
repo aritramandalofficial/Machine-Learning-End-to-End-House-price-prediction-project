@@ -10,7 +10,7 @@ There are 11 features and 506 rows.
 
 Features are the following:
 
-**CRIM:**	Per capita crime rate by town.
+**CRIME:**	Per capita crime rate by town.
 
 **Industry:**	Proportion of non-retail business acres per town.
 
